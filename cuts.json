@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Bife de Chorizo",
+    "englishName": "Sirloin Strip Steak",
+    "category": "CLASSIC STEAKHOUSE CUT",
+    "description": "Thick, juicy strip cut with a signature fat cap that crisps over hot embers.",
+    "doneness": "Jugoso (Medium-Rare)"
+  },
+  {
+    "name": "Asado de Tira",
+    "englishName": "Cross-Cut Short Ribs",
+    "category": "THE SUNDAY ESSENTIAL",
+    "description": "Bone-in beef ribs sliced across the bone and cooked slowly until tender.",
+    "doneness": "A punto (Medium)"
+  },
+  {
+    "name": "Vacío",
+    "englishName": "Flank Steak",
+    "category": "PARRILLA FAVORITE",
+    "description": "Rich, fibrous cut prized for its crispy outer crust and deeply flavorful interior.",
+    "doneness": "A punto (Medium)"
+  },
+  {
+    "name": "Entraña",
+    "englishName": "Skirt Steak",
+    "category": "QUICK & INTENSE",
+    "description": "Thin, intensely beefy cut seared quickly over high heat and finished with coarse salt.",
+    "doneness": "Jugoso (Medium-Rare)"
+  },
+  {
+    "name": "Ojo de Bife",
+    "englishName": "Ribeye Steak",
+    "category": "TENDER & MARBLED",
+    "description": "Boneless ribeye with rich marbling that melts on the grill for maximum tenderness.",
+    "doneness": "Jugoso (Medium-Rare)"
+  },
+  {
+    "name": "Matambre a la Pizza",
+    "englishName": "Grilled Flank with Tomato & Mozzarella",
+    "category": "ARGENTINE CLASSIC",
+    "description": "Thin rose-meat flank grilled and topped with tomato sauce, melted cheese, and oregano.",
+    "doneness": "Bien cocido (Well Done)"
+  }
+]

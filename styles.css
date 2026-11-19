@@ -1,0 +1,176 @@
+/* Google Fonts imported via @import */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* Custom properties */
+:root {
+  --ember-red: #c83e2b;
+  --charcoal-bg: #161312;
+  --grill-card: #231e1c;
+  --warm-gold: #e09f3e;
+  --cream-text: #f5efe6;
+}
+
+/* General styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--charcoal-bg);
+  color: var(--cream-text);
+}
+
+h1, h2, h3, h5 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+/* Navbar */
+.navbar-brand {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: var(--warm-gold);
+}
+
+#mainNavbar .nav-link {
+  color: var(--cream-text);
+  transition: color 0.3s ease;
+}
+
+#mainNavbar .nav-link:hover {
+  color: var(--warm-gold);
+}
+
+/* Override Bootstrap default styles */
+.btn-primary {
+  background-color: var(--ember-red);
+  border-color: var(--ember-red);
+  color: var(--cream-text);
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--warm-gold);
+  border-color: var(--warm-gold);
+  color: var(--charcoal-bg);
+}
+
+/* Introductory Header */
+#home {
+  background-image: linear-gradient(to bottom, var(--charcoal-bg), var(--grill-card));
+}
+
+.section-tag {
+  color: var(--warm-gold);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.hero-heading {
+  font-size: 3.4rem;
+}
+
+.hero-heading span {
+  color: var(--ember-red);
+}
+
+/* Main Sections */
+#cuts {
+  background-color: var(--charcoal-bg);
+}
+
+#parrilla {
+  background-color: var(--grill-card);
+}
+
+.section-heading {
+  font-size: 2.4rem;
+}
+
+/* Dynamic Cut Cards */
+.cut-card {
+  background-color: var(--grill-card);
+  transition: background-color 0.3s ease;
+}
+
+.cut-card:hover {
+  background-color: #302825;
+}
+
+.cut-origin {
+  color: var(--warm-gold);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.cut-title {
+  font-size: 1.6rem;
+}
+
+.cut-doneness {
+  color: var(--ember-red);
+  font-style: italic;
+}
+
+/* Ritual Section */
+.step-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.step-time {
+  color: var(--warm-gold);
+  font-weight: 700;
+}
+
+/* Parrilla Image Section */
+.parrilla-img {
+  width: 100%;
+}
+
+.img-caption {
+  font-size: 0.85rem;
+  color: var(--warm-gold);
+}
+
+.feature-icon {
+  color: var(--ember-red);
+  font-size: 1.5rem;
+}
+
+/* Footer */
+footer {
+  background-color: #0e0c0b;
+}
+
+.footer-link {
+  color: var(--cream-text);
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: var(--warm-gold);
+}
+
+/* Modal */
+#asadoModal .modal-content {
+  background-color: var(--grill-card);
+  color: var(--cream-text);
+}
+
+#asadoForm .form-label {
+  font-weight: 700;
+}
+
+#userName,
+#userEmail,
+#favoriteCut,
+#notes {
+  background-color: var(--cream-text);
+  color: var(--charcoal-bg);
+}
+
+.btn-close {
+  background-color: var(--cream-text);
+}

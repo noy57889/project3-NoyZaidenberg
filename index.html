@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asado Argentino | The Culture of Fire &amp; Meat</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Responsive Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-danger">
+    <div class="container">
+      <a class="navbar-brand" href="#home">ASADO ARGENTINO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#cuts">The Cuts</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ritual">The Ritual</a></li>
+          <li class="nav-item"><a class="nav-link" href="#parrilla">La Parrilla</a></li>
+        </ul>
+        <button type="button" class="btn btn-primary ms-lg-3" data-bs-toggle="modal" data-bs-target="#asadoModal">
+          Book a Parrilla Night
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Introductory Header -->
+  <header id="home" class="py-5">
+    <div class="container py-5">
+      <p class="section-tag">BUENOS AIRES · TRADITION ON THE GRILL</p>
+      <h1 class="hero-heading">Fire, wood and patience.<br><span>The soul of Argentina.</span></h1>
+      <p class="lead my-4">
+        In Argentina, an asado is never just a meal. It is a Sunday ritual around the embers,
+        the pride of every asador, and a craft built on prime cuts and slow heat.
+      </p>
+      <a href="#cuts" class="btn btn-primary">Explore the cuts</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Section 1: Bootstrap Grid + Dynamic JSON Rendering -->
+    <section id="cuts" class="py-5">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-12 col-md-7">
+            <p class="section-tag">FROM THE BUTCHER TO THE EMBERS</p>
+            <h2 class="section-heading">Classic Argentine cuts</h2>
+          </div>
+          <div class="col-12 col-md-5 d-flex align-items-center">
+            <p class="mb-0">Six essential cuts you will find on every true Argentine parrilla, from the first achuras to the main steak.</p>
+          </div>
+        </div>
+        <!-- Cards rendered dynamically via fetch() from cuts.json -->
+        <div class="row g-4" id="cutsContainer"></div>
+      </div>
+    </section>
+
+    <!-- Section 2: Free Flexbox Layout -->
+    <section id="ritual" class="py-5 bg-dark">
+      <div class="container">
+        <p class="section-tag">STEP BY STEP</p>
+        <h2 class="section-heading mb-4">The Sunday asado ritual</h2>
+
+        <div class="d-flex justify-content-between align-items-center border-bottom border-secondary py-3">
+          <div>
+            <p class="step-title mb-0">1. El Fuego (Lighting the Fire)</p>
+            <p class="mb-0">Quebracho wood and charcoal burn down until glowing red brasas are ready.</p>
+          </div>
+          <span class="step-time">11:30 AM</span>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center border-bottom border-secondary py-3">
+          <div>
+            <p class="step-title mb-0">2. La Picada &amp; Achuras</p>
+            <p class="mb-0">Chorizo, morcilla, and provoleta hit the grill first with bread and chimichurri.</p>
+          </div>
+          <span class="step-time">12:30 PM</span>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center border-bottom border-secondary py-3">
+          <div>
+            <p class="step-title mb-0">3. Los Cortes Principales</p>
+            <p class="mb-0">Asado de tira and vacío cook slowly over steady heat with coarse salt only.</p>
+          </div>
+          <span class="step-time">01:30 PM</span>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center border-bottom border-secondary py-3">
+          <div>
+            <p class="step-title mb-0">4. Un Aplauso para el Asador</p>
+            <p class="mb-0">Everyone gathers at the table to applaud the person who tended the fire.</p>
+          </div>
+          <span class="step-time">02:15 PM</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Functional Image + Grid & Flexbox -->
+    <section id="parrilla" class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 mb-4 mb-md-0">
+            <img src="asado.jfif" alt="Traditional Argentine beef grilling over hot embers on a parrilla" class="parrilla-img img-fluid rounded">
+            <p class="img-caption mt-2">SLOW COOKED OVER QUEBRACHO EMBERS, BUENOS AIRES</p>
+          </div>
+          <div class="col-12 col-md-6">
+            <p class="section-tag">THE TABLE</p>
+            <h2 class="section-heading">Simple ingredients, deep flavor.</h2>
+            <p class="mb-4">Good Argentine beef does not need heavy marinades. Fire, coarse salt, and good company do all the work.</p>
+
+            <div class="d-flex align-items-center border-bottom border-secondary py-3">
+              <i class="bi bi-fire feature-icon me-3"></i>
+              <div>
+                <p class="fw-bold mb-0">Brasas, never flames</p>
+                <p class="mb-0">Meat cooks over indirect glowing embers so the outside stays crisp and the inside juicy.</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center border-bottom border-secondary py-3">
+              <i class="bi bi-droplet-half feature-icon me-3"></i>
+              <div>
+                <p class="fw-bold mb-0">Chimichurri &amp; Salsa Criolla</p>
+                <p class="mb-0">Parsley, garlic, oregano, vinegar, and olive oil served right at the table.</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center py-3">
+              <i class="bi bi-cup-straw feature-icon me-3"></i>
+              <div>
+                <p class="fw-bold mb-0">Malbec pairing</p>
+                <p class="mb-0">A glass of Mendoza Malbec balances the richness of every cut.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+          <a class="navbar-brand" href="#home">ASADO ARGENTINO</a>
+        </div>
+        <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+          <p class="mb-0">&copy; 2026 Asado Argentino. Buenos Aires, Argentina.</p>
+        </div>
+        <div class="col-12 col-md-4 d-flex justify-content-center">
+          <a href="https://www.instagram.com" target="_blank" class="footer-link me-3"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.youtube.com" target="_blank" class="footer-link me-3"><i class="bi bi-youtube"></i></a>
+          <a href="https://www.tiktok.com" target="_blank" class="footer-link"><i class="bi bi-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal with Functional Form -->
+  <div class="modal fade" id="asadoModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form id="asadoForm" class="needs-validation" novalidate action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="enter your id">
+          <div class="modal-header">
+            <h5 class="modal-title">Reserve a Parrilla Experience</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="userName" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="userName" name="name" placeholder="Your name" minlength="2" required>
+              <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+            <div class="mb-3">
+              <label for="userEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="userEmail" name="email" placeholder="name@email.com" required>
+              <div class="invalid-feedback">Please enter a valid email address.</div>
+            </div>
+            <div class="mb-3">
+              <label for="favoriteCut" class="form-label">Favorite Argentine Cut</label>
+              <select class="form-select" id="favoriteCut" name="cut" required>
+                <option value="" selected disabled>Choose a cut</option>
+                <option value="bife-de-chorizo">Bife de Chorizo</option>
+                <option value="asado-de-tira">Asado de Tira</option>
+                <option value="vacio">Vacío</option>
+                <option value="entrana">Entraña</option>
+                <option value="ojo-de-bife">Ojo de Bife</option>
+                <option value="matambre">Matambre a la Pizza</option>
+              </select>
+              <div class="invalid-feedback">Please select a cut.</div>
+            </div>
+            <div class="mb-3">
+              <label for="notes" class="form-label">Preferred Doneness or Notes</label>
+              <textarea class="form-control" id="notes" name="message" rows="3" placeholder="Jugoso, a punto, or any note..."></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Send Request</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- External JavaScript -->
+  <script src="code.js"></script>
+</body>
+</html>
